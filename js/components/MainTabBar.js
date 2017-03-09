@@ -336,7 +336,7 @@ export default class MainTabBar extends React.Component {
                     panCloseMask={drawer.panCloseMask}
                     tapToClose={drawer.tapToClose}
                     tweenHandler={(ratio) => ({
-                          main: { opacity:(2-ratio)/2 }
+                         // main: { opacity:(2-ratio)/2 }
                         })}
                     styles={drawer.styles}
                     //onClose={this.onHideLine.bind(this)}

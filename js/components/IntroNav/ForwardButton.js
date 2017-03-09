@@ -23,19 +23,21 @@ const styles = StyleSheet.create({
   touchableOpacity: {
     flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    overflow: 'hidden',
   },
   arrow: {
-    paddingRight: 15,
-    color: '#B385FF',
+    paddingRight: 10,
+    paddingTop: 2,
+    color: '#db5c81',
     textAlign: 'center',
     fontSize: 45
   },
   forwardText: {
-    color: '#B385FF',
-    paddingTop: 10,
-    paddingRight: 10,
-    fontSize: 20,
+    color: '#db5c81',
+    paddingTop: 7,
+    paddingRight: 0,
+    fontSize: 18,
     textAlign: 'center',
   }
 })

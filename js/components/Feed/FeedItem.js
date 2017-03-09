@@ -11,6 +11,7 @@ import {
     Animated
 } from 'react-native'
 
+import NavBar, { NavGroup, NavButton, NavButtonText, NavTitle } from 'react-native-nav'
 // const { RNMixpanel: Mixpanel } = NativeModules
 
 // import Video from '../VideoPatchIos10'
@@ -30,9 +31,10 @@ let { width, height } = Dimensions.get('window')
 // import { GetPreviewImageUrl } from '../../lib/utils'
 import NavigationBar from 'react-native-navbar'
 import BackButton from '../IntroNav/BackButton'
+import ForwardButton from '../IntroNav/ForwardButton'
 import ImageButton from '../IntroNav/ImageButton'
-import NavTitle from '../IntroNav/NavTitle'
-// import Icon from 'react-native-vector-icons/FontAwesome';
+import NavTitles from '../IntroNav/NavTitle'
+
 
 
 export default class FeedItem extends React.Component {
@@ -337,20 +339,20 @@ export default class FeedItem extends React.Component {
     _leftButton() {
         return (
             /*<ImageButton imageSource={Images.menu_icon} onPress={this._onPressMenu.bind(this)}/>*/
-            <BackButton text={'Settings'} onPress={this._onPressMenu.bind(this)} />
+            <BackButton text={'Setting'} onPress={this._onPressMenu.bind(this)} />
         )
     }
     _rightButton () {
         return (
-            <View></View>
-            //<Icon name="rocket" size={30} color="#900" />
+            <ForwardButton text={'Setting'} onPress={this._onPressMenu.bind(this)} />
+
         )
     }
     _title() {
         //let title = 'focus'; // services
         const title = 'Services';
         return (
-            <NavTitle>{title}</NavTitle>
+            <NavTitles>{title}</NavTitles>
         )
     }
     _onPressMenu() {
@@ -388,6 +390,7 @@ export default class FeedItem extends React.Component {
                 rightButton={this._rightButton()}
                 title={this._title()}
                 style={styles.navBar}/>
+
             <Text>fgdfg</Text>
           </View>
         )
@@ -399,14 +402,16 @@ export default class FeedItem extends React.Component {
 }
 
 const styles = {
+
+    navBar: {
+        backgroundColor: '#1f1b20'
+    },
     view: {
         flex: 1,
         //backgroundColor: 'white'
         backgroundColor: 'black',
     },
-    navBar: {
-        backgroundColor: '#1f1b20'
-    },
+
     bodyView: {
         marginTop: 7,
         borderTopWidth: 1,
@@ -595,8 +600,8 @@ const styles = {
         paddingRight: 10
     },
     title: {
-        fontSize: 18,
-        textAlign: 'right'
+        // fontSize: 18,
+        // textAlign: 'right'
     },
     subtitle: {
         fontSize: 10,

@@ -19,7 +19,7 @@ export default class NavTitle extends Component {
 const styles = StyleSheet.create({
   title: {
     color: '#ffffff',
-    paddingTop: -4,
+    marginTop: -4,
     // paddingLeft: 0,
     fontSize: 18,
     // textAlign: 'center',

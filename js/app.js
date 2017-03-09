@@ -65,7 +65,7 @@ class App extends React.Component {
                 //when Feed component is initializing
                 setTimeout(()=>{ 
                     // this.navigator.push({ name: 'Login' }, true) intro
-                    // this.navigator.push({ name: 'IntroNavContainer' }, true)
+                    this.navigator.push({ name: 'IntroNavContainer' }, true)
                     //this.navigator.push({ name: 'MainContainer' }, true)
 
                 })                
