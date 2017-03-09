@@ -1,0 +1,3 @@
+rootProject.name = 'FocusPro'
+
+include ':app'
